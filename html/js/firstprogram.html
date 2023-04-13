@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program</title>
+</head>
+<body id="changecolor">
+  <button onclick ="generate()">changecolor</button>
+  <h1>programming in javascript</h1> 
+  <p id="demo"></p>
+  <P id="lame"></P>
+  <button type="button" onclick="document.write(30-10)">Click to get result</button>
+  <button onclick="myfunction()">show me</button>
+    <p id="use"></p>
+  <h2 id="human"></h2>
+  <h2 id="company"></h2>
+  <h3 id="Date"></h3>
+  <h2 id="length"></h2>
+  <h3 id="replace"></h3>
+  <h4 id="ook">Book</h4>
+  <button onclick ="Book()"> Click</button>
+  <button onclick ="document.getElementById('Date').innerHTML=Date()">Checkdate</button>
+  <script>
+    document.getElementById("demo").innerHTML = 10 * 30 
+    document.getElementById("lame").innerHTML = 10 + 15
+    document.write( 200 / 5);
+    document.write("<br>")
+   // window.alert("congratulations you won the promo code!")
+    console.log("There is no error in my code......")
+     let a, b, c;
+     a = 30;
+     b = 20;
+     c = a + b;
+     document.write( c );
+
+     function myfunction(){
+        document.getElementById("use").innerHTML = 2 + 2
+     }
+
+     var human = {firstname:'Nurudeen',lastname:'Olayinka',age:'12',adress:'Tipa garage'}
+     document.getElementById('human').innerHTML = human.lastname+" "+human.firstname+" is living in "+human.adress+" the age of the person is "+human.age
+
+      const company ={firstname:"Olayinka",lastname:"Ganiyu",location:"Oluyole",year:"2018",companyname:"Giloge",fullname: function(){return this.lastname+" "+this.firstname}}
+       document.getElementById("company").innerHTML =company.companyname+" was founded in the year "+company.year+" the location is at " +company.location+ " And the CEO is "+company.fullname()
+     var txt="Nurudeen"
+      document.getElementById('length').innerHTML = txt.length
+      var X=10; var Y="20";
+      var Z;
+      Z=X+Y
+      console.log(Z)
+      var sentence = "The work now begin" 
+      console.log(sentence.indexOf("now"))
+      console.log(sentence.search("now"))
+      console.log(sentence.slice(4,8))
+       
+    let music ="love me"
+    let music2 = music.replace("love me", "let me be")
+    document.getElementById('replace').innerHTML = music2
+    const amount =98.672
+    console.log (amount)
+    console.log (amount.toPrecision())
+    console.log (amount.toPrecision(2))
+
+    let mynumber='1000'
+    console.log(Number(mynumber))
+    console.log(mynumber)
+    const mynumbertwo = 10
+    console.log(parseInt(mynumbertwo))
+    console.log(parseFloat(mynumbertwo))
+    var phones = ["samsung","iphone","nokia"]
+    console.log(phones)
+    console.log(phones[0])
+    console.log(phones[2])
+    console.log(phones.sort())
+    console.log(phones.reverse())
+    console.log(new Date())
+    function generate(){ document.getElementById("changecolor").style.backgroundColor="yellow"};
+    function Book(){ document.getElementById("ook").style.color ="red"}
+ </script>
+</body>
+</html>
